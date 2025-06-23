@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 1ji0o&#39;s Blog">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="主页搭建, 1ji0o&#39;s Blog">
+    <meta name="description" content="[[2025-02-14]]参照Kinnari’s Site，根据KinnariyaMamaTanha&amp;#x2F;KinnariyaMamaTanha.github.io: Kinnari’s Site for Blogs, Notes, ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 1ji0o&#39;s Blog</title>
+    <title>主页搭建 | 1ji0o&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">主页搭建</h1>
                 </div>
             </div>
         </div>
@@ -375,7 +375,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-06-22
+                    2025-06-23
                 </div>
                 
 
@@ -396,19 +396,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h4 id="2025-02-14"><a href="#2025-02-14" class="headerlink" title="[[2025-02-14]]"></a>[[2025-02-14]]</h4><p>参照<a target="_blank" rel="noopener" href="https://kinnariyamamatanha.github.io/">Kinnari’s Site</a>，根据<a target="_blank" rel="noopener" href="https://github.com/KinnariyaMamaTanha/KinnariyaMamaTanha.github.io">KinnariyaMamaTanha&#x2F;KinnariyaMamaTanha.github.io: Kinnari’s Site for Blogs, Notes, And So On.</a>，考虑建立自己的github主页。我需要主动出击！</p>
+<p>250214创建仓库<a target="_blank" rel="noopener" href="https://github.com/1JI0O/1ji0o.github.io">1JI0O&#x2F;1ji0o.github.io: My site for blogs and so on!</a>，考虑有时间可以部署个人主页。<br>考虑<a target="_blank" rel="noopener" href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></p>
+<p>完成了第一次尝试，感觉十分不熟悉如何push，我应该把mkdocs目录下创建的文件放到clone的文件夹里吗？我什么都不知道。</p>
+<h4 id="2025-02-15"><a href="#2025-02-15" class="headerlink" title="[[2025-02-15]]"></a>[[2025-02-15]]</h4><p>先clone到某个目录，然后在那个目录里mkdocs new . 然后编辑完后mkdocs build，再然后mkdocs gh-deploy –force，需要注意的是，要“ensure that the <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">publishing source branch</a> for your GitHub Page is set to <code>gh-pages</code> ”</p>
+<p>现在访问1ji0o.github.io就可以看到mkdocs的界面了。</p>
+<p>参照<a target="_blank" rel="noopener" href="https://squidfunk.github.io/mkdocs-material/publishing-your-site/">Publishing your site - Material for MkDocs</a></p>
+<p>我是只有gh-pages一个branch，每次改完内容需要手动mkdocs gh-deploy，如果是使用github action的话有所不同。</p>
+<p>此外，需要安装git，但是它默认不连代理。连代理参见<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/636418854">解决 Github port 443 : Timed out - 知乎</a></p>
+<p><code>git config --global http.proxy http://127.0.0.1:7890  </code>git config –global https.proxy <a target="_blank" rel="noopener" href="http://127.0.0.1:7890/">http://127.0.0.1:7890</a></p>
+<p><a target="_blank" rel="noopener" href="https://wncfht.github.io/notes/Tools/Blog/Mkdocs_Material/">mkdocs material 超全配置 - wnc 的咖啡馆</a><br>我发现这些人基于mkdocs构建的博客都长得差不多，考虑借鉴一下。</p>
+<p>我应该考虑拿hexo重构个人主页，因为这样方案可能比较丰富，此外页面也可以比较美观。认为这方面不应该太折腾，能快速拿出方案就很好了</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a></p>
+<h4 id="2025-06-22"><a href="#2025-06-22" class="headerlink" title="[[2025-06-22]]"></a>[[2025-06-22]]</h4><p>我正在考虑拿hexo重新搭建我的个人网站，也许能从中学到点什么</p>
+<p>尝试安装hexo<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a><br><code>npm install -g hexo-cli</code><br>发现问题：<code>无法加载文件 D:\nodejs\npm.ps1，因为在此系统上禁止运行脚本</code><br>通过<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lpkshuai/p/17697778.html">vscode 终端报错：无法加载文件 D:\nodejs\npm.ps1，因为在此系统上禁止运行脚本。 - Li_pk - 博客园</a>和<a target="_blank" rel="noopener" href="https://blog.csdn.net/pro_fan/article/details/120457551">npm : 无法加载文件 D:...\nodejs\npm.ps1，因为在此系统上禁止运行脚本-CSDN博客</a><br>解决</p>
+<p><a href="https://1ji0o.github.io/">Hexo</a><br>22点46分 已经初步搭建完成</p>
+<p>参见<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">在 GitHub Pages 上部署 Hexo | Hexo</a>的一键部署</p>
+<h4 id="2025-06-23"><a href="#2025-06-23" class="headerlink" title="[[2025-06-23]]"></a>[[2025-06-23]]</h4><p>尝试安装<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">hexo-theme-matery&#x2F;README_CN.md at develop · blinkfox&#x2F;hexo-theme-matery</a><br>尝试<code>hexo d</code>发现报错：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">remote: Resolving deltas: 100% (12/12), done.</span><br><span class="line">remote: error: GH013: Repository rule violations found for refs/heads/gh-pages.</span><br><span class="line">remote:</span><br><span class="line">remote: - GITHUB PUSH PROTECTION</span><br><span class="line">remote:   —————————————————————————————————————————</span><br><span class="line">remote:     Resolve the following violations before pushing again</span><br><span class="line">remote:</span><br><span class="line">remote:     - Push cannot contain secrets</span><br><span class="line">remote:</span><br><span class="line">remote:</span><br><span class="line">remote:      (?) Learn how to resolve a blocked push</span><br><span class="line">remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push</span><br><span class="line">remote:</span><br><span class="line">remote:</span><br><span class="line">remote:       —— Tencent Cloud Secret ID ———————————————————————————</span><br><span class="line">remote:        locations:</span><br><span class="line">remote:          - commit: d1bbdfc8822725e81cb0f49455bc1104f1bedcca</span><br><span class="line">remote:            path: libs/twikoo/twikoo.all.min.js:2</span><br><span class="line">remote:</span><br><span class="line">remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.</span><br><span class="line">remote:        https://github.com/1JI0O/1ji0o.github.io/security/secret-scanning/unblock-secret/2ytWOb5HmupNGHyKtZ9iCgljNIz</span><br><span class="line">remote:</span><br><span class="line">remote:</span><br><span class="line">remote:</span><br><span class="line">To https://github.com/1JI0O/1ji0o.github.io.git</span><br><span class="line"> ! [remote rejected] HEAD -&gt; gh-pages (push declined due to repository rule violations)</span><br><span class="line">error: failed to push some refs to &#x27;https://github.com/1JI0O/1ji0o.github.io.git&#x27;</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:\hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">    at ChildProcess.emit (node:events:518:28)</span><br><span class="line">    at cp.emit (D:\hexo\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">    at ChildProcess._handle.onexit (node:internal/child_process:293:12)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>参照报错内容，访问了里面给出的链接，临时关闭代码审查，push成功</p>
+<p>然后还是有问题，参见<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/335470115">(56 封私信 &#x2F; 81 条消息) Hexo本地显示没有问题 部署上去后就不能正常显示 怎么办？ - 知乎</a></p>
+<p>发现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line"></span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line"></span><br><span class="line">url: https://1JI0O.github.io/1ji0o.github.io</span><br></pre></td></tr></table></figure>
+<p>最开始设置有问题，我错误理解了“project”的含义，事实上这个是指项目名称，而不是这个词本身，此外大写的1JI0O也把我害惨了。<br>不对，这样设置还是有问题<br>设置为：<code>url: https://1ji0o.github.io</code>就好了</p>
 
                 
             </div>
@@ -435,7 +446,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://1ji0o.github.io/2025/06/22/hello-world/">https://1ji0o.github.io/2025/06/22/hello-world/</a>
+                    <a href="https://1ji0o.github.io/2025/06/23/%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA/">https://1ji0o.github.io/2025/06/23/%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -549,9 +560,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2025/06/23/%E4%B8%BB%E9%A1%B5%E6%90%AD%E5%BB%BA/">
                     <div class="card-image">
@@ -569,9 +581,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-06-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -580,6 +592,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -587,7 +600,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2025/06/22/hello-world/">
@@ -617,7 +630,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
