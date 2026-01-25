@@ -44,8 +44,6 @@ export const defaultContentPageLayout: PageLayout = {
       folderClickBehavior: "collapse", // 点击文件夹名时：折叠/展开
       folderDefaultState: "collapsed", // 【重要】初始状态：收起所有文件夹
       useSavedState: true, // 记住用户的折叠/展开习惯
-      // 修正后的过滤函数
-      filterFn: (node) => node.displayName !== "tags", 
     }),
   ],
   right: [
@@ -76,8 +74,6 @@ export const defaultListPageLayout: PageLayout = {
       folderClickBehavior: "collapse", // 点击文件夹名时：折叠/展开
       folderDefaultState: "collapsed", // 【重要】初始状态：收起所有文件夹
       useSavedState: true, // 记住用户的折叠/展开习惯
-      // 修正后的过滤函数
-      filterFn: (node) => node.displayName !== "tags", 
     }),
   ],
   right: [],
