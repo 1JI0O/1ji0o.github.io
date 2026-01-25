@@ -1,7 +1,5 @@
 [[2026-01-25]]，继承自[[个人主页]]
-[Haoxiang Qin | 秦浩翔](https://1ji0o.github.io/about/)
 基本上是 gemini 3 flash 干的
-参照 [Zihao He | 何子浩](https://alan-heoooh.github.io/)
 
 # 初始化
 
