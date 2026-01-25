@@ -38,7 +38,15 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    // --- 修改这里 ---
+    Component.Explorer({
+      title: "目录", // 给一个标题，确保它像个侧边栏而不是折叠菜单
+      folderClickBehavior: "collapse", // 点击文件夹名时：折叠/展开
+      folderDefaultState: "collapsed", // 【重要】初始状态：收起所有文件夹
+      useSavedState: true, // 记住用户的折叠/展开习惯
+      // 修正后的过滤函数
+      filterFn: (node) => node.displayName !== "tags", 
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +70,15 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    // --- 修改这里 (保持一致) ---
+    Component.Explorer({
+      title: "目录", // 给一个标题，确保它像个侧边栏而不是折叠菜单
+      folderClickBehavior: "collapse", // 点击文件夹名时：折叠/展开
+      folderDefaultState: "collapsed", // 【重要】初始状态：收起所有文件夹
+      useSavedState: true, // 记住用户的折叠/展开习惯
+      // 修正后的过滤函数
+      filterFn: (node) => node.displayName !== "tags", 
+    }),
   ],
   right: [],
 }
