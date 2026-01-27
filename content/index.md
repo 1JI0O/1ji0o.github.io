@@ -1,7 +1,7 @@
 ---
 title: Welcome to My Digital Garden
 ---
-**这里是 @1JI0O 的博客**
+**这里是 [@1JI0O](https://github.com/1JI0O) 的博客**
 
 ---
 ## 目录
