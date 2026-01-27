@@ -625,3 +625,32 @@ cam_104122060902  cam_104122064489  lowdim  robot_data_0.json  robot_pose_data_0
 - 训练多了，双相机这里用的是600还是700轮的东西，就过拟合
 - 反正就是有毛病
 
+20点18分
+
+可能是十多分钟前，我仔细研究了训练数据和真实采集的数据，感觉使用训练数据的eval之所以能看，是因为他那个vt基本是被obs读进去的训练数据拉着走，观察左下角图片也可以看到，红线基本是水平动了一小截，然后猛然被新obs预测拉上去，然后继续摆烂，反正就是学得一坨屎
+
+![action_sequence_episode_1.png](https://s2.loli.net/2026/01/27/UTr6LB3WP4soqYy.png)
+
+咨询了学长的意见，他大概的意思是这样的
+- 感觉确实学了个寄吧
+- acp这个东西有劣根性
+	- backbone 是 [[Diffusion Policy_ Visuomotor Policy Learning via Action Diffusion]]
+		- 唉，还都是这个实验室做的
+		- 那也难怪，我们的FoAR和RDP（是我们的吗？）本质上也还是[[RISE_ 3D Perception Makes Real-World Robot  Imitation Simple and Effective]]
+	- diffusion policy本身学习能力就有点问题
+		- 尤其是比方说手去抓一个杯子
+		- 正常学习特征应该是去学习杯子
+		- 但是dp会去学习手的位置
+		- 总之就是很容易OOD
+- 我们的数据确实不多
+	- 问了问是否提供数据集，确实没有
+	- 推测他们至少有300条数据
+	- 当然，相机不可能1000hz，最多30hz左右（他们用的gopro，那也许能到60）
+- 虽然照理来说我们是低频数据，理论上讲能学得更好
+	- 但是acp就是很诡异，太诡异了
+	- 从我个人的阅读体验来看，这个代码尤其诡异，封装了一层又一层，各种policy冗余最后只用了一个
+	- 反正就是抽象和封装太多了
+- 这个baseline也不是很重要，能适配就适配，不行就算了，也无所谓
+	- 毕竟不是我们做的
+	- 也不是很好的模型
+
