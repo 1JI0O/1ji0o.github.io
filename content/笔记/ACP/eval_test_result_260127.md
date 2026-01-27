@@ -1,4 +1,4 @@
-```
+```bash
 key_model_map adding wrench key: robot0_eef_wrench
 rgb keys:          ['rgb_0', 'rgb_1']
 low_dim_keys keys: ['robot0_eef_pos', 'robot0_eef_rot_axis_angle']
