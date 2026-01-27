@@ -5,7 +5,11 @@ title: Welcome to My Digital Garden
 
 ---
 ## 目录
-- [About Me](https://1ji0o.github.io/about/)
-- [[个人主页 - quartz]] - 此 Blog 建设日志
-- [[友情链接]]
+- #### [About Me](https://1ji0o.github.io/about/)
+- #### [[个人主页 - quartz]] - 此 Blog 建设日志
+- #### [[友情链接]]
 
+---
+
+## News
+- 2026年01月25日 17点39分 此 Blog 上线了！
