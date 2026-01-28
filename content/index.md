@@ -12,3 +12,4 @@ title: Welcome to My Digital Garden
 ---
 ## News
 - 2026年01月25日 17点39分 此 Blog 上线了！
+- 2026年01月28日 从主库挑选了一些电影和看书记录放到这里
