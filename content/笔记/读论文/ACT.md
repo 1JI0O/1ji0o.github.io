@@ -1,3 +1,6 @@
+---
+title: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+---
 建立于[[2025-11-27]]，继承自[[MVIG]]
 
 

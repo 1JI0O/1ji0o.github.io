@@ -1,11 +1,11 @@
 建立于[[2025-11-29]]，用于索引
 
-参见[[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware]]
+参见[[ACT]]
 - 本来“读论文”这个文件我是希望可以管理很多论文，可以在其中记录简要信息
 - 等到内容太多了再拆分
 - 结果这一篇就需要拆分了
 
-接下来要读的：[[Diffusion Policy_ Visuomotor Policy Learning via Action Diffusion]]
+接下来要读的：[[Diffusion Policy]]
 - 我靠，我有种不祥的预感，我可能需要先把diffusion的网课看看，或者找一点博客或者看看cs231n 2025的slides
 - 我觉得让ai先把文章完整看一遍，总结一下，然后我再接着读会很好，因为ai会基于全文给出内容，我在读到后面时，一些核心内容可能ai已经提到过了，就感觉很舒服
 - 22点39分 [[2025-11-29]] 不错 把introduction看完了
@@ -21,7 +21,7 @@
 - 19点14分 看完了全部19页，真是不容易
 
 
-然后是[[RISE_ 3D Perception Makes Real-World Robot  Imitation Simple and Effective]]
+然后是[[RISE]]
 - 23点44分 [[2025-12-02]] 看到了3D感知的Point-based部分，还没看
 - 08点18分 [[2025-12-03]] 为什么早上ai studio相应这么快
 - 09点17分 [[2025-12-03]] 看到了IV. EXPERIMENTS，还没看
@@ -33,6 +33,8 @@
 接下来要学习的是[rise-policy/RISE: [IROS 2024] 📈 RISE: 3D Perception Makes Real-World Robot Imitation Simple and Effective](https://github.com/rise-policy/rise#)，关于RISE的源代码
 
 参见[[Attention Is All You Need]]
+
+参见[[VLA相关]]
 
 
 

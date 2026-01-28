@@ -1,3 +1,6 @@
+---
+title: "RISE: 3D Perception Makes Real-World Robot  Imitation Simple and Effective"
+---
 RISE: 3D Perception Makes Real-World Robot  Imitation Simple and Effective
 [[2025-11-29]]
 

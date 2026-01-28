@@ -1,7 +1,10 @@
+---
+title: "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion"
+---
 Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
 建立于[[2025-11-29]]
 
-关于这个和[[Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware]]的关系
+关于这个和[[ACT]]的关系
 
 - 两篇不是「谁绝对更好」，而是**侧重点和技术路线不同**。
 - ACT 是较早的一条路线：**用 Transformer 学动作“块”（action chunks）的生成模型**。
