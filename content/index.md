@@ -2,12 +2,14 @@
 title: Welcome to My Digital Garden
 ---
 **这里是 [@1JI0O](https://github.com/1JI0O) 的博客**
+**[About Me](https://1ji0o.github.io/about/)**
 
 ---
-## 目录
+## 友情链接
 
-- #### [About Me](https://1ji0o.github.io/about/)
-- #### [[友情链接]]
+- [Kilox](https://profile.kilox.top/)
+- [aCannedFish's Home](https://acannedfish.github.io/)
+- [Kinnariya](https://kinnari-notes.vercel.app/)
 
 ---
 ## News
