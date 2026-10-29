@@ -215,7 +215,10 @@ plugins:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    layout:
+      position: right
+      priority: 60
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
